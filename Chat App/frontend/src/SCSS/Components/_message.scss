@@ -1,0 +1,63 @@
+.message {
+	&__messageBox {
+		background: $messageBoxColor;
+		border-radius: 20px;
+		padding: 5px 20px;
+		color: $white;
+		display: inline-block;
+		max-width: 75%;
+	}
+	&__messageText {
+		width: 100%;
+		letter-spacing: 0;
+		float: left;
+		font-size: 1.1em;
+		word-wrap: break-word;
+		img {
+			vertical-align: middle;
+		}
+	}
+	&__messageContainer {
+		display: flex;
+		justify-content: flex-end;
+		padding: 0 5%;
+		margin-top: 3px;
+	}
+	&__sentText {
+		display: flex;
+		align-items: center;
+		font-family: Helvetica;
+		color: $sentTextColor;
+		letter-spacing: 0.3px;
+	}
+	&__pl-10 {
+		padding-left: 10px;
+	}
+
+	&__pr-10 {
+		padding-right: 10px;
+	}
+
+	&__justifyStart {
+		justify-content: flex-start;
+	}
+
+	&__justifyEnd {
+		justify-content: flex-end;
+	}
+
+	&__colorWhite {
+		color: $white;
+	}
+
+	&__colorDark {
+		color: $colorDark;
+	}
+
+	&__backgroundBlue {
+		background: $messageSentColor;
+	}
+	&__backgroundLight {
+		background: $backgroundLight;
+	}
+}

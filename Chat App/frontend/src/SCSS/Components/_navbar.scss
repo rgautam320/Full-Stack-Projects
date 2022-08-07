@@ -1,0 +1,21 @@
+// Write Your SCSS Here
+.navbar {
+	&__nav {
+		background-color: $navbar-background !important;
+	}
+	&__link {
+		text-decoration: none;
+		color: $black;
+		padding: 0 0.8rem;
+		font-size: 1.2rem;
+		font-weight: 350;
+		height: 2.4rem;
+		color: $white;
+		transition: all;
+		transition-duration: 0.5s;
+	}
+	&__active {
+		color: $white;
+		font-weight: 500;
+	}
+}

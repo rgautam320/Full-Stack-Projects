@@ -1,0 +1,31 @@
+.form {
+	&__title {
+		line-height: 12rem;
+		vertical-align: middle;
+		font-size: 3.5rem;
+		font-weight: 500;
+	}
+	&__card {
+		border-radius: 1rem;
+	}
+	&__input {
+		border: 0.1rem solid $black;
+		border-radius: 0.6rem !important;
+	}
+	&__btn {
+		width: 100%;
+		background-color: $blue;
+		border: none;
+		outline: none;
+		padding: 0.5rem 1rem;
+		border-radius: 0.6rem;
+		color: $white;
+		font-weight: bold;
+	}
+	@media (max-width: 576px) {
+		&__title {
+			line-height: 3rem;
+			font-size: 2.2rem;
+		}
+	}
+}

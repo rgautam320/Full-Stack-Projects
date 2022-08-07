@@ -1,0 +1,14 @@
+{
+  "short_name": "Awesome Chat Template",
+  "name": "Awesome Chat App by Rajan Gautam",
+  "icons": [
+    {
+      "src": "logo.svg",
+      "type": "image/svg"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

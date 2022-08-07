@@ -1,0 +1,485 @@
+{
+	"info": {
+		"_postman_id": "b8589903-e912-4c68-894a-c8ec654dcc42",
+		"name": "BlogWebsiteAWT",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Home",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URI}}",
+					"host": [
+						"{{URI}}"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Home",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URI}}",
+							"host": [
+								"{{URI}}"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "61"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"3d-kt5xnYbfUok1dPoxO3OS9eel5r4\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 20 Apr 2022 20:13:01 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"author\": \"Rajan Gautam\",\n    \"message\": \"Hello, MERN is awesome!\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Posts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URI}}/posts/",
+					"host": [
+						"{{URI}}"
+					],
+					"path": [
+						"posts",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Posts",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URI}}/posts/",
+							"host": [
+								"{{URI}}"
+							],
+							"path": [
+								"posts",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "249"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"f9-CEnZzn4l/nCseJWOAbzgMeXoqbA\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 20 Apr 2022 20:12:55 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"_id\": \"6260692d8505f265dfb37d98\",\n        \"title\": \"This is the title\",\n        \"subtitle\": \"This is the subtitle\",\n        \"author\": \"Rajan Gautam\",\n        \"content\": \"This is the content\",\n        \"tag\": \"tag\",\n        \"image\": \"http://rajangautam.com.np\",\n        \"createdAt\": \"2022-04-20T20:08:38.013Z\",\n        \"__v\": 0\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Get Single Post",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URI}}/posts/6260692d8505f265dfb37d98",
+					"host": [
+						"{{URI}}"
+					],
+					"path": [
+						"posts",
+						"6260692d8505f265dfb37d98"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Single Post",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URI}}/posts/6260692d8505f265dfb37d98",
+							"host": [
+								"{{URI}}"
+							],
+							"path": [
+								"posts",
+								"6260692d8505f265dfb37d98"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "247"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"f7-WR6ScrlmIbBSh7IIWhMRzuPwrjM\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 20 Apr 2022 20:12:46 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"_id\": \"6260692d8505f265dfb37d98\",\n    \"title\": \"This is the title\",\n    \"subtitle\": \"This is the subtitle\",\n    \"author\": \"Rajan Gautam\",\n    \"content\": \"This is the content\",\n    \"tag\": \"tag\",\n    \"image\": \"http://rajangautam.com.np\",\n    \"createdAt\": \"2022-04-20T20:08:38.013Z\",\n    \"__v\": 0\n}"
+				}
+			]
+		},
+		{
+			"name": "Create Post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"author\": \"Rajan Gautam\",\r\n    \"title\": \"This is the title\",\r\n    \"subtitle\": \"This is the subtitle\",\r\n    \"content\": \"This is the content\",\r\n    \"tag\": \"tag\",\r\n    \"image\": \"http://rajangautam.com.np\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URI}}/posts",
+					"host": [
+						"{{URI}}"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Create Post",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"author\": \"Rajan Gautam\",\r\n    \"title\": \"This is the title\",\r\n    \"subtitle\": \"This is the subtitle\",\r\n    \"content\": \"This is the content\",\r\n    \"tag\": \"tag\",\r\n    \"image\": \"http://rajangautam.com.np\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URI}}/posts",
+							"host": [
+								"{{URI}}"
+							],
+							"path": [
+								"posts"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "247"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"f7-xEhBUoxf2FWeWRcF78zDkHvaO54\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 20 Apr 2022 20:12:29 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"title\": \"This is the title\",\n    \"subtitle\": \"This is the subtitle\",\n    \"author\": \"Rajan Gautam\",\n    \"content\": \"This is the content\",\n    \"tag\": \"tag\",\n    \"image\": \"http://rajangautam.com.np\",\n    \"createdAt\": \"2022-04-20T20:08:38.013Z\",\n    \"_id\": \"6260692d8505f265dfb37d98\",\n    \"__v\": 0\n}"
+				}
+			]
+		},
+		{
+			"name": "Update Post",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"author\": \"Rajan Gautam\",\r\n    \"title\": \"This is the title\",\r\n    \"subtitle\": \"This is the subtitle\",\r\n    \"content\": \"This is the content\",\r\n    \"tag\": \"tag\",\r\n    \"image\": \"https://rajangautam.com.np\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URI}}/posts/6260692d8505f265dfb37d98",
+					"host": [
+						"{{URI}}"
+					],
+					"path": [
+						"posts",
+						"6260692d8505f265dfb37d98"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Update Post",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"author\": \"Rajan Gautam\",\r\n    \"title\": \"This is the title\",\r\n    \"subtitle\": \"This is the subtitle\",\r\n    \"content\": \"This is the content\",\r\n    \"tag\": \"tag\",\r\n    \"image\": \"https://rajangautam.com.np\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URI}}/posts/6260692d8505f265dfb37d98",
+							"host": [
+								"{{URI}}"
+							],
+							"path": [
+								"posts",
+								"6260692d8505f265dfb37d98"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "248"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"f8-gt6ADq6+MKNI8VezKnvIoHubIiM\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 20 Apr 2022 20:13:51 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"_id\": \"6260692d8505f265dfb37d98\",\n    \"title\": \"This is the title\",\n    \"subtitle\": \"This is the subtitle\",\n    \"author\": \"Rajan Gautam\",\n    \"content\": \"This is the content\",\n    \"tag\": \"tag\",\n    \"image\": \"https://rajangautam.com.np\",\n    \"createdAt\": \"2022-04-20T20:08:38.013Z\",\n    \"__v\": 0\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete Post",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{URI}}/posts/62606b7635634f0b1a228e88",
+					"host": [
+						"{{URI}}"
+					],
+					"path": [
+						"posts",
+						"62606b7635634f0b1a228e88"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Delete Post",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{URI}}/posts/6260692d8505f265dfb37d98",
+							"host": [
+								"{{URI}}"
+							],
+							"path": [
+								"posts",
+								"6260692d8505f265dfb37d98"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "248"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"f8-gt6ADq6+MKNI8VezKnvIoHubIiM\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 20 Apr 2022 20:14:24 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"_id\": \"6260692d8505f265dfb37d98\",\n    \"title\": \"This is the title\",\n    \"subtitle\": \"This is the subtitle\",\n    \"author\": \"Rajan Gautam\",\n    \"content\": \"This is the content\",\n    \"tag\": \"tag\",\n    \"image\": \"https://rajangautam.com.np\",\n    \"createdAt\": \"2022-04-20T20:08:38.013Z\",\n    \"__v\": 0\n}"
+				}
+			]
+		}
+	]
+}

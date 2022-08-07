@@ -1,0 +1,48 @@
+.chat {
+	&__chat {
+		width: 550px;
+		height: 600px;
+	}
+	&__title {
+		font-size: 2.5rem;
+		font-weight: 500;
+		line-height: 6rem;
+		border-bottom: 0.2rem solid $black;
+	}
+
+	&__sendbox {
+		display: flex;
+		border-top: 0.125rem solid $sendBoxBorderTop;
+	}
+	&__input {
+		border: none;
+		outline: none;
+		border-radius: 0.2rem;
+		padding: 0.4rem 1rem;
+		width: 80%;
+		font-size: 1.2em;
+		:focus,
+		:active,
+		:hover {
+			border: none;
+			outline: none;
+		}
+	}
+	&__sendButton {
+		color: $white !important;
+		text-transform: uppercase;
+		text-decoration: none;
+		background: $infoBarColor;
+		padding: 0.6rem;
+		display: inline-block;
+		border: none;
+		border-radius: 0.2rem;
+		width: 20%;
+	}
+
+	@media (max-width: 576px) {
+		&__chat {
+			width: 350px;
+		}
+	}
+}
